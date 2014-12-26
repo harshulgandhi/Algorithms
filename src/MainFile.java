@@ -54,7 +54,7 @@ public class MainFile {
 			System.out.println(arr[i]);	
 		}
 		
-		Selection.sort(arr);
+		Insertion.sort(arr);
 		System.out.println("Before sorting");
 		for (int i = 0;i<10;i++){
 			System.out.println(arr[i]);	
