@@ -46,6 +46,22 @@ public class MainFile {
 
 		/*Executing selection sort
 		 * module. It supports 
+		 * different data types
+		
+		Integer[] arr = {199,2,23,22,1,229,2093,11,353,2};;
+		System.out.println("Before sorting");
+		for (int i = 0;i<10;i++){
+			System.out.println(arr[i]);	
+		}
+		
+		Insertion.sort(arr);
+		System.out.println("Before sorting");
+		for (int i = 0;i<10;i++){
+			System.out.println(arr[i]);	
+		}*/
+		
+		/*Executing SHELL sort
+		 * module. It supports 
 		 * different data types*/
 		
 		Integer[] arr = {199,2,23,22,1,229,2093,11,353,2};;

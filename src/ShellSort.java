@@ -1,4 +1,5 @@
-public class Insertion {
+
+public class ShellSort {
 	public static boolean less(Comparable x, Comparable y){
 		return x.compareTo(y)<0;
 	}
@@ -16,15 +17,18 @@ public class Insertion {
 		return true;
 	}
 	
-	public static void sort(Comparable[] a){
+	public static void shellSort(Comparable[] a){
 		int N = a.length;
-		for(int i=0;i<N;i++){
-			for (int j = i;j>0;j--){
-				if (less(a[j], a[j-1]))
-					exch(a, j, j-1);
-				else break;
+		int h = 1;
+		while(h<N/3) h = 3*h+1;
+		while(h>=1){
+			for (int i = h;i<N;i++){
+				for(int j = i;j>=h && less(a[j],a[j-h]);j-=h){
+					exch(a, j, j-h);
+				}
 			}
+			h=h/3;
 		}
 	}
+
 }
-	
